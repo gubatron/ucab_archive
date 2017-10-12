@@ -1,0 +1,55 @@
+Version de Multiplicacion de matrices en RMI.
+----------------------------------------------
+Angel Leon.
+Luis Fleitas.
+
+        En un servidor se encuentra un vector A, de longitud N
+        y una matriz B de longitud NxN. N Clientes le piden al
+        servidor el vector A, y una columna i. Los clientes
+        multiplican A por la columna B[i] y devuelven un resultado
+        (entero) que luego envian de nuevo al servidor, el servidor
+        coloca los resultados parciales en una matriz C.
+
+
+Como correr el Ejemplo:
+
+
+Correr el Servidor:
+-------------------
+En una ventana de DOS o un Shell en cualquier OS, desde
+el mismo directorio en el que se encuentra este leeme.txt
+
+java matriz/ServidorImpl
+
+
+Correr el Cliente:
+------------------
+En una ventana de DOS o un Shell en cualquier OS, desde
+el mismo directorio en el que se encuentra este leeme.txt
+
+java matriz/Cliente [ipHost]
+
+
+Ejecute el Cliente cuantas veces lo desee.
+
+
+NOTA: El Ejemplo supongo que solo corre en una maquina, ya que hace el
+binding contra "localhost", solo hay que cambiar el localhost en el main
+del cliente y colocar el nombre del host donde esta el servidor para
+que se conecte desde otra maquina.
+
+No hay que correr rmiregistry, el ServidorImpl se encarga de eso.
+
+NOTA2: La parte metodica de RMI fue generada por Forte for Java, que tiene
+Templates para hacer mas agradable y rapido el trabajo con RMI.
+
+NOTA3: A esta version aun le falta llenar las matrices a partir de archivos.
+No nos parecio util hacer esto, ya que solo queriamos aprender a utilizar la
+arquitectura RMI, ya sabemos manejar archivos.
+
+CONCLUSION: Nos dimos cuenta que una vez que se pueden llamar
+metodos remotamente, no tuvimos la necesidad de implementar un
+protocolo como en el ejercicio de Sockets, en el que se mandaba
+un String "DESCARGAR", etc... esto ahorra muchisimo tiempo...
+Comparese el codigo del Cliente (Version Sockets) con el Actual
+y se puede observar un codigo mas limpio y facil de entender.

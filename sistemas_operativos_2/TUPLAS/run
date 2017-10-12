@@ -1,0 +1,4 @@
+rm *.class
+javac tuplas/*.java
+rmic -v1.2 -classpath . tuplas.TuplaDImpl
+mv *.class tuplas

@@ -1,0 +1,139 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0062)http://www.ldc.usb.ve/~yudith/docencia/catolica/proyecto2.html --><HTML><HEAD><TITLE>Sistemas Distribuidos. Proyecto # 2</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="MSHTML 5.50.4522.1800" name=GENERATOR></HEAD>
+<BODY bgColor=white>
+<H2>Proyecto 2 </H2><BR>
+<H3>Introducción </H3>
+<P align=justify>Los sistemas distribuidos presentan características muy 
+relevantes y diferenciables de cualquier otro tipo de sistema. La transparencia 
+de localidad permite independizar la relacion física que se establece entre 
+piezas de software cliente y servidor, la tolerancia a fallas ofrece sistemas 
+altamente disponibles y la sincronización distribuída permite (entre otras 
+cosas) tomar decisiones en función a información que puede estar particionada o 
+replicada entre varias maquinas y/o servidores. </P><BR>
+<H3>Descripción General </H3>
+<P align=justify>Durante este segundo proyecto se persigue que el estudiante 
+diseñe e implemente un sistema distribuido que cumpla con las concepciones 
+básicas indicadas en la INTRODUCCION. </P>
+<P align=justify>Se pretende crear un pequeño manejador de tuplas distribuidas. 
+A dicho manejador de ahora en adelante lo denominaremos TUPLAS. </P>
+<P align=justify>TUPLAS estará formado por dos piezas de software diferenciadas. 
+La primera es el "engine" como tal, se trata de una serie de servidores 
+(demonios UNIX llamados TuplaD) que se encontrarán distribuidos en la red y 
+sobre los cuales residirán los diferentes conjuntos de tuplas. La segunda pieza 
+es la herramienta administrativa y de manipulación de datos (Tupla-Admin), se 
+trata de un cliente que sabe interactuar con el servicio distribuido TUPLAS. 
+</P><B>Concepto de tuplas </B>
+<P align=justify>La tupla es una secuencia ordenada de datos cuyo primer 
+elemento es la clave única de la tupla. Los elementos que componen una tupla se 
+tratan como caracter pues no existe la nocion de tipo de dato. La estructura de 
+una tupla ti es: </P>
+<CENTER>ti = (d0,d1,...,dn) (dimensión n+1) </CENTER>
+<P align=justify>Cada tupla tiene asociada una dimensión que representa el 
+número de elementos, (incluyendo la clave) </P><BR>
+<P align=justify>Donde d0 es la clave primaria única y cada di (i:1..n) es un 
+string. </P>
+<P align=justify>En los servidores TuplaD residirán conjuntos de tuplas. Un 
+conjunto de tuplas se puede definir como: </P>
+<CENTER>T = {t1,.....,tn} </CENTER>
+<P align=justify>Donde ti es una tupla con una clave única en el sistema. 
+</P><B>Funcionamiento General </B><BR>
+<P align=justify>El servicio TUPLAS consta de una serie de servidores (demonios 
+UNIX: TuplaD) que se montan en diferentes máquinas y se comunican entre ellos 
+vía Sockets y con el resto del mundo vía RMI. Estos servidores son capaces de 
+manipular conjuntos de tuplas que son definidos y manipulados por el usuario a 
+través de Tupla-Admin. </P>
+<P align=justify>Cuando se define un conjuntos de tuplas se puede indicar que el 
+mismo residirá replicado, particionado o segmentado entre diferentes servidores 
+del sistema. En cualquiera de estos casos el sistema debe garantizar que el 
+acceso a los datos por parte del usuario será transparente y consistente, por 
+tanto deben considerarse todos los casos asociados a sincronización y ejecución 
+de transacciones distribuidas (por ejemplo, exclusión mutua). </P>
+<UL>
+  <LI>
+  <P align=justify>Se dice que un conjunto de tuplas está replicado si existe al 
+  menos 1 copia en otro servidor. Las operaciones de modificación de la 
+  información se deben ejecutar de manera transaccional en todos los servidores 
+  que contengan una réplica de la réplica. </P>
+  <P align=justify>Ejemplo: Dado T ={t1,....,tn} , S1 y S2 servidores TuplaD 
+  donde reside T se tiene que: </P>
+  <CENTER>S1.T = S2.T </CENTER>
+  <P align=justify>Se debe implementar un algoritmo de two phase commit para 
+  garantizar integridad en el caso de operaciones de modificación de datos sobre 
+  las réplicas. </P>
+  <LI>
+  <P align=justify>Un conjunto de tuplas está particionado si la unión de las 
+  tuplas que se encuentra en varios servidores forma el conjunto de tuplas 
+  final. </P>
+  <P align=justify>Ejemplo: Dado T = {t1,....,tn} , S1 y S2 servidores TuplaD 
+  donde reside T se tiene que: </P>
+  <CENTER>(S1.T intersección S2.T) = vacío y (S1.T' U S2.T'' = T) </CENTER>
+  <LI>
+  <P align=justify>Finalmente, un conjunto de tuplas está segmentado si en dos o 
+  más servidores se encuentran las tuplas divididas como lo muestra el ejemplo. 
+  </P>
+  <P align=justify>Ejemplo: Dado T = {t1,....,tn} , S1 y S2 servidores TuplaD 
+  donde reside T se tiene que: </P>
+  <CENTER>S1.T' = {(d0, d1,...,dn/2), (e0,e1,...,en/2)} y S2.T'' = 
+  {(d0,dn/2+1,...,dn), (e0, en/2+1,...,en)}. Notar que el primer elemento de las 
+  subtuplas es la clave. </CENTER></LI></UL><BR>
+<P align=justify>Finalmente, se pretende que el sistema sea capaz de detectar si 
+uno de sus integrantes se cae para de esa manera poder indicarle al usuario 
+cuando los datos no se encuentran disponibles por falla del servicio o por 
+ausencia de los mismos. </P><BR><B>Operaciones sobre Tuplas </B>
+<P align=justify>Un conjunto de tuplas ofrece los siguientes métodos para su 
+manipulación: </P>
+<UL>
+  <LI>
+  <P align=justify>Crear (Nombre, Dimensión, Tipo, Lista de Servidores) = Status 
+  </P>
+  <P align=justify>Donde = Nombre: Identificador del conjunto de tuplas 
+  <BR>Dimensión: Número de elementos de una tupla (debe ser &gt;= 2) <BR>Tipo: 
+  Indica si es segmentado, replicado o particionado <BR>Lista de Servidores: 
+  Nombre de las máquinas donde se desea que resida el conjunto de tuplas. 
+  <BR></P>
+  <P align=justify>Las operaciones sobre las tuplas pueden manejar un esquema de 
+  locking centralizado para proveer la exclusión mutua. </P>
+  <LI>
+  <P align=justify>Eliminar (Nombre) = Status </P>
+  <LI>
+  <P align=justify>Insertar (Nombre, ti) = Status </P>
+  <LI>
+  <P align=justify>Borrar (Nombre, Clave) = Status </P>
+  <LI>
+  <P align=justify>Buscar (Nombre, Clave) = Lista de Valores (tupla) </P>
+  <LI>
+  <P align=justify>Actualizar (Nombre, Clave, Posicion, Valor) = Status </P>
+  <LI>
+  <P align=justify>Configuración (Nombre) = Información de configuración del 
+  conjunto de tuplas </P></LI></UL><BR><B>Servidores Tuplad </B>
+<P align=justify>Se trata de los componentes del sistema que manejan todo lo 
+referente a los conjuntos de tuplas así como la interacción del cliente con 
+dicha TUPLAS. </P>
+<P align=justify>Son demonios UNIX construídos en JAVA que interactúan entre si 
+a través de sockets. Son los encargados de garantizar que el sistema se comporta 
+de manera distribuida, para llevar esto a cabo, tienen definido un protocolo de 
+comunicación. </P>
+<P align=justify>Ofrecen al usuario la posibilidad de ejecutar cualquier tipo de 
+operación sobre un conjunto de tuplas, mediante Tupla-Admin, la interacción que 
+se establece con dichos usuarios es a través de RMI Multicast. </P>
+<P align=justify>Los servidores deberán balancear la carga al momento de crear 
+los conjuntos, es decir, repartir los conjuntos uniformemente en los servidores. 
+</P><BR><B>Herramienta de Manipulación </B>
+<P align=justify>Es el software cliente que debe ofrecer la posibilidad de 
+configurar un ambiente TUPLAS ya montado, asi como la manipulación de los 
+conjuntos de tuplas. </P>
+<P align=justify>Deberá proveer una interfaz que permite visualizar el estado 
+del sistema completo. </P><BR><B>Detalles Adicionales</B> 
+<P align=justify>
+<UL>
+  <LI>
+  <P align=justify>Se debe garantizar que TUPLAS funciona en la plataforma del 
+  Laboratorio de la UCAB </P>
+  <LI>
+  <P align=justify>Se debe programar TUPLAS en Java, sockets y RMI </P></LI></UL>
+<P></P><BR>
+<P align=justify>Las entregas deben hacerse en sobre de manila sellado, 
+debidamente identificados con carnets y nombres de los integrantes, y debe 
+contener un informe concreto y el listado de código. </P></BODY></HTML>

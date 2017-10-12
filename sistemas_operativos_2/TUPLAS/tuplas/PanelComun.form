@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<Form version="1.0" type="com.netbeans.developer.modules.loaders.form.forminfo.JPanelFormInfo">
+  <SyntheticProperties>
+    <SyntheticProperty name="encoding" type="java.lang.String" value="ISO-8859-1"/>
+  </SyntheticProperties>
+
+  <Layout class="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout"/>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="jPanelEliminar">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="com.netbeans.developer.explorer.propertysheet.editors.BorderEditor">
+          <Border info="com.netbeans.developerx.loaders.form.formeditor.border.TitledBorderInfo">
+            <TitledBorder title="Eliminación"/>
+          </Border>
+        </Property>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout" value="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+          <GridBagConstraints anchor="10" fill="1" gridHeight="1" gridWidth="1" gridX="-1" gridY="-1" insetsBottom="0" insetsLeft="0" insetsRight="0" insetsTop="0" ipadX="0" ipadY="0" weightX="0.0" weightY="0.0"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout class="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="jLabel1">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="com.netbeans.developer.editors.StringEditor" value="Nombre"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout" value="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+              <GridBagConstraints anchor="10" fill="0" gridHeight="1" gridWidth="1" gridX="-1" gridY="-1" insetsBottom="0" insetsLeft="0" insetsRight="0" insetsTop="0" ipadX="0" ipadY="0" weightX="0.0" weightY="0.0"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jTextFieldNombreEliminacion">
+          <Properties>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="com.netbeans.developer.editors.DimensionEditor">
+              <Dimension value="[150, 20]"/>
+            </Property>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="com.netbeans.developer.editors.DimensionEditor">
+              <Dimension value="[150, 20]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="com.netbeans.developer.editors.DimensionEditor">
+              <Dimension value="[150, 20]"/>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout" value="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+              <GridBagConstraints anchor="10" fill="0" gridHeight="1" gridWidth="1" gridX="-1" gridY="-1" insetsBottom="2" insetsLeft="3" insetsRight="2" insetsTop="2" ipadX="0" ipadY="0" weightX="0.0" weightY="0.0"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButtonEliminar">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="com.netbeans.developer.editors.StringEditor" value="Eliminar"/>
+          </Properties>
+
+          <Events>
+            <EventHandler event="actionPerformed" handler="jButtonEliminarActionPerformed"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout" value="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+              <GridBagConstraints anchor="10" fill="2" gridHeight="1" gridWidth="2" gridX="0" gridY="1" insetsBottom="4" insetsLeft="4" insetsRight="4" insetsTop="4" ipadX="0" ipadY="0" weightX="0.0" weightY="0.0"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="jPanelInsertar">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="com.netbeans.developer.explorer.propertysheet.editors.BorderEditor">
+          <Border info="com.netbeans.developerx.loaders.form.formeditor.border.TitledBorderInfo">
+            <TitledBorder title="Insertado"/>
+          </Border>
+        </Property>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout" value="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+          <GridBagConstraints anchor="10" fill="2" gridHeight="1" gridWidth="1" gridX="1" gridY="0" insetsBottom="0" insetsLeft="0" insetsRight="0" insetsTop="0" ipadX="0" ipadY="0" weightX="0.0" weightY="0.0"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout class="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="jLabel2">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="com.netbeans.developer.editors.StringEditor" value="Nombre"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout" value="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+              <GridBagConstraints anchor="10" fill="0" gridHeight="1" gridWidth="1" gridX="-1" gridY="-1" insetsBottom="0" insetsLeft="0" insetsRight="0" insetsTop="0" ipadX="0" ipadY="0" weightX="0.0" weightY="0.0"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jTextFieldNombreInsertado">
+          <Properties>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="com.netbeans.developer.editors.DimensionEditor">
+              <Dimension value="[150, 20]"/>
+            </Property>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="com.netbeans.developer.editors.DimensionEditor">
+              <Dimension value="[150, 20]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="com.netbeans.developer.editors.DimensionEditor">
+              <Dimension value="[150, 20]"/>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout" value="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+              <GridBagConstraints anchor="10" fill="0" gridHeight="1" gridWidth="1" gridX="-1" gridY="-1" insetsBottom="4" insetsLeft="4" insetsRight="4" insetsTop="4" ipadX="0" ipadY="0" weightX="0.0" weightY="0.0"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel3">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="com.netbeans.developer.editors.StringEditor" value="ti"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout" value="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+              <GridBagConstraints anchor="10" fill="0" gridHeight="1" gridWidth="1" gridX="0" gridY="1" insetsBottom="0" insetsLeft="0" insetsRight="0" insetsTop="0" ipadX="0" ipadY="0" weightX="0.0" weightY="0.0"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jTextFieldTi">
+          <Properties>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="com.netbeans.developer.editors.DimensionEditor">
+              <Dimension value="[150, 20]"/>
+            </Property>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="com.netbeans.developer.editors.DimensionEditor">
+              <Dimension value="[150, 20]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="com.netbeans.developer.editors.DimensionEditor">
+              <Dimension value="[150, 20]"/>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout" value="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+              <GridBagConstraints anchor="10" fill="0" gridHeight="1" gridWidth="1" gridX="1" gridY="1" insetsBottom="4" insetsLeft="4" insetsRight="4" insetsTop="0" ipadX="0" ipadY="0" weightX="0.0" weightY="0.0"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButtonInsertar">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="com.netbeans.developer.editors.StringEditor" value="Insertar"/>
+          </Properties>
+
+          <Events>
+            <EventHandler event="actionPerformed" handler="jButtonInsertarActionPerformed"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout" value="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+              <GridBagConstraints anchor="10" fill="2" gridHeight="1" gridWidth="2" gridX="0" gridY="2" insetsBottom="4" insetsLeft="4" insetsRight="4" insetsTop="4" ipadX="0" ipadY="0" weightX="0.0" weightY="0.0"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="jPanelBorrar">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="com.netbeans.developer.explorer.propertysheet.editors.BorderEditor">
+          <Border info="com.netbeans.developerx.loaders.form.formeditor.border.TitledBorderInfo">
+            <TitledBorder title="Borrado"/>
+          </Border>
+        </Property>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout" value="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+          <GridBagConstraints anchor="10" fill="1" gridHeight="1" gridWidth="1" gridX="0" gridY="1" insetsBottom="0" insetsLeft="0" insetsRight="0" insetsTop="0" ipadX="0" ipadY="0" weightX="0.0" weightY="0.0"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout class="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="jLabel4">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="com.netbeans.developer.editors.StringEditor" value="Nombre"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout" value="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+              <GridBagConstraints anchor="10" fill="0" gridHeight="1" gridWidth="1" gridX="-1" gridY="-1" insetsBottom="0" insetsLeft="0" insetsRight="0" insetsTop="0" ipadX="0" ipadY="0" weightX="0.0" weightY="0.0"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jTextFieldNombreBorrado">
+          <Properties>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="com.netbeans.developer.editors.DimensionEditor">
+              <Dimension value="[150, 20]"/>
+            </Property>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="com.netbeans.developer.editors.DimensionEditor">
+              <Dimension value="[150, 20]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="com.netbeans.developer.editors.DimensionEditor">
+              <Dimension value="[150, 20]"/>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout" value="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+              <GridBagConstraints anchor="10" fill="0" gridHeight="1" gridWidth="1" gridX="-1" gridY="-1" insetsBottom="0" insetsLeft="4" insetsRight="4" insetsTop="0" ipadX="0" ipadY="0" weightX="0.0" weightY="0.0"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel5">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="com.netbeans.developer.editors.StringEditor" value="Clave"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout" value="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+              <GridBagConstraints anchor="10" fill="0" gridHeight="1" gridWidth="1" gridX="0" gridY="1" insetsBottom="0" insetsLeft="0" insetsRight="0" insetsTop="0" ipadX="0" ipadY="0" weightX="0.0" weightY="0.0"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jTextFieldClaveBorrado">
+          <Properties>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="com.netbeans.developer.editors.DimensionEditor">
+              <Dimension value="[150, 20]"/>
+            </Property>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="com.netbeans.developer.editors.DimensionEditor">
+              <Dimension value="[150, 20]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="com.netbeans.developer.editors.DimensionEditor">
+              <Dimension value="[150, 20]"/>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout" value="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+              <GridBagConstraints anchor="10" fill="0" gridHeight="1" gridWidth="1" gridX="1" gridY="1" insetsBottom="0" insetsLeft="4" insetsRight="4" insetsTop="0" ipadX="0" ipadY="0" weightX="0.0" weightY="0.0"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButtonBorrar">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="com.netbeans.developer.editors.StringEditor" value="Borrar"/>
+          </Properties>
+
+          <Events>
+            <EventHandler event="actionPerformed" handler="jButtonBorrarActionPerformed"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout" value="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+              <GridBagConstraints anchor="10" fill="2" gridHeight="1" gridWidth="2" gridX="0" gridY="2" insetsBottom="4" insetsLeft="4" insetsRight="4" insetsTop="4" ipadX="0" ipadY="0" weightX="0.0" weightY="0.0"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="jPanelBuscar">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="com.netbeans.developer.explorer.propertysheet.editors.BorderEditor">
+          <Border info="com.netbeans.developerx.loaders.form.formeditor.border.TitledBorderInfo">
+            <TitledBorder title="Busqueda"/>
+          </Border>
+        </Property>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout" value="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+          <GridBagConstraints anchor="10" fill="0" gridHeight="1" gridWidth="1" gridX="1" gridY="1" insetsBottom="0" insetsLeft="0" insetsRight="0" insetsTop="0" ipadX="0" ipadY="0" weightX="0.0" weightY="0.0"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout class="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="jLabel6">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="com.netbeans.developer.editors.StringEditor" value="Nombre"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout" value="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+              <GridBagConstraints anchor="10" fill="0" gridHeight="1" gridWidth="1" gridX="-1" gridY="-1" insetsBottom="0" insetsLeft="0" insetsRight="0" insetsTop="0" ipadX="0" ipadY="0" weightX="0.0" weightY="0.0"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jTextFieldNombreBusqueda">
+          <Properties>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="com.netbeans.developer.editors.DimensionEditor">
+              <Dimension value="[150, 20]"/>
+            </Property>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="com.netbeans.developer.editors.DimensionEditor">
+              <Dimension value="[150, 20]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="com.netbeans.developer.editors.DimensionEditor">
+              <Dimension value="[150, 20]"/>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout" value="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+              <GridBagConstraints anchor="10" fill="0" gridHeight="1" gridWidth="1" gridX="-1" gridY="-1" insetsBottom="4" insetsLeft="4" insetsRight="4" insetsTop="4" ipadX="0" ipadY="0" weightX="0.0" weightY="0.0"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel7">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="com.netbeans.developer.editors.StringEditor" value="Clave"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout" value="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+              <GridBagConstraints anchor="10" fill="0" gridHeight="1" gridWidth="1" gridX="0" gridY="1" insetsBottom="0" insetsLeft="0" insetsRight="0" insetsTop="0" ipadX="0" ipadY="0" weightX="0.0" weightY="0.0"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jTextFieldClaveBusqueda">
+          <Properties>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="com.netbeans.developer.editors.DimensionEditor">
+              <Dimension value="[150, 20]"/>
+            </Property>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="com.netbeans.developer.editors.DimensionEditor">
+              <Dimension value="[150, 20]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="com.netbeans.developer.editors.DimensionEditor">
+              <Dimension value="[150, 20]"/>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout" value="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+              <GridBagConstraints anchor="10" fill="0" gridHeight="1" gridWidth="1" gridX="1" gridY="1" insetsBottom="4" insetsLeft="4" insetsRight="4" insetsTop="0" ipadX="0" ipadY="0" weightX="0.0" weightY="0.0"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButtonBuscar">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="com.netbeans.developer.editors.StringEditor" value="Buscar"/>
+          </Properties>
+
+          <Events>
+            <EventHandler event="actionPerformed" handler="jButtonBuscarActionPerformed"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout" value="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+              <GridBagConstraints anchor="10" fill="0" gridHeight="2" gridWidth="1" gridX="-1" gridY="-1" insetsBottom="0" insetsLeft="0" insetsRight="4" insetsTop="0" ipadX="0" ipadY="0" weightX="0.0" weightY="0.0"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JList" name="jListBusqueda">
+          <Properties>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="com.netbeans.developer.editors.DimensionEditor">
+              <Dimension value="[150, 100]"/>
+            </Property>
+            <Property name="border" type="javax.swing.border.Border" editor="com.netbeans.developer.explorer.propertysheet.editors.BorderEditor">
+              <Border info="com.netbeans.developerx.loaders.form.formeditor.border.BevelBorderInfo">
+                <BevelBorder bevelType="1"/>
+              </Border>
+            </Property>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="com.netbeans.developer.editors.DimensionEditor">
+              <Dimension value="[150, 100]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="com.netbeans.developer.editors.DimensionEditor">
+              <Dimension value="[150, 100]"/>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout" value="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+              <GridBagConstraints anchor="10" fill="2" gridHeight="1" gridWidth="3" gridX="0" gridY="2" insetsBottom="5" insetsLeft="5" insetsRight="5" insetsTop="5" ipadX="0" ipadY="0" weightX="0.0" weightY="0.0"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="jPanelConfiguracion">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="com.netbeans.developer.explorer.propertysheet.editors.BorderEditor">
+          <Border info="com.netbeans.developerx.loaders.form.formeditor.border.TitledBorderInfo">
+            <TitledBorder title="Configuración"/>
+          </Border>
+        </Property>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout" value="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+          <GridBagConstraints anchor="10" fill="3" gridHeight="1" gridWidth="1" gridX="0" gridY="2" insetsBottom="0" insetsLeft="0" insetsRight="0" insetsTop="0" ipadX="0" ipadY="0" weightX="0.0" weightY="0.0"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout class="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="jLabel8">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="com.netbeans.developer.editors.StringEditor" value="Nombre"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout" value="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+              <GridBagConstraints anchor="10" fill="0" gridHeight="1" gridWidth="1" gridX="-1" gridY="-1" insetsBottom="0" insetsLeft="0" insetsRight="0" insetsTop="0" ipadX="0" ipadY="0" weightX="0.0" weightY="0.0"/>
+            </Constraint>
+            <Constraint layoutClass="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignFlowLayout" value="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignFlowLayout$FlowConstraintsDescription"/>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jTextFieldNombreConfiguracion">
+          <Properties>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="com.netbeans.developer.editors.DimensionEditor">
+              <Dimension value="[150, 20]"/>
+            </Property>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="com.netbeans.developer.editors.DimensionEditor">
+              <Dimension value="[150, 20]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="com.netbeans.developer.editors.DimensionEditor">
+              <Dimension value="[150, 20]"/>
+            </Property>
+            <Property name="document" type="javax.swing.text.Document" editor="com.netbeans.enterprise.modules.jdbc.editors.TextDocumentEditor">
+              <SerializedValue value="-84,-19,0,5,115,114,0,30,106,97,118,97,120,46,115,119,105,110,103,46,116,101,120,116,46,80,108,97,105,110,68,111,99,117,109,101,110,116,-114,-100,99,38,-39,126,-73,29,2,0,3,76,0,5,97,100,100,101,100,116,0,18,76,106,97,118,97,47,117,116,105,108,47,86,101,99,116,111,114,59,76,0,11,100,101,102,97,117,108,116,82,111,111,116,116,0,51,76,106,97,118,97,120,47,115,119,105,110,103,47,116,101,120,116,47,65,98,115,116,114,97,99,116,68,111,99,117,109,101,110,116,36,65,98,115,116,114,97,99,116,69,108,101,109,101,110,116,59,76,0,7,114,101,109,111,118,101,100,113,0,126,0,1,120,114,0,33,106,97,118,97,120,46,115,119,105,110,103,46,116,101,120,116,46,65,98,115,116,114,97,99,116,68,111,99,117,109,101,110,116,110,19,99,106,-63,68,-15,27,2,0,4,76,0,7,99,111,110,116,101,120,116,116,0,52,76,106,97,118,97,120,47,115,119,105,110,103,47,116,101,120,116,47,65,98,115,116,114,97,99,116,68,111,99,117,109,101,110,116,36,65,116,116,114,105,98,117,116,101,67,111,110,116,101,120,116,59,76,0,4,100,97,116,97,116,0,43,76,106,97,118,97,120,47,115,119,105,110,103,47,116,101,120,116,47,65,98,115,116,114,97,99,116,68,111,99,117,109,101,110,116,36,67,111,110,116,101,110,116,59,76,0,18,100,111,99,117,109,101,110,116,80,114,111,112,101,114,116,105,101,115,116,0,22,76,106,97,118,97,47,117,116,105,108,47,68,105,99,116,105,111,110,97,114,121,59,76,0,12,108,105,115,116,101,110,101,114,76,105,115,116,116,0,37,76,106,97,118,97,120,47,115,119,105,110,103,47,101,118,101,110,116,47,69,118,101,110,116,76,105,115,116,101,110,101,114,76,105,115,116,59,120,112,115,114,0,29,106,97,118,97,120,46,115,119,105,110,103,46,116,101,120,116,46,83,116,121,108,101,67,111,110,116,101,120,116,68,68,50,-82,89,-8,-102,-24,3,0,2,73,0,10,117,110,117,115,101,100,83,101,116,115,76,0,6,115,116,121,108,101,115,116,0,24,76,106,97,118,97,120,47,115,119,105,110,103,47,116,101,120,116,47,83,116,121,108,101,59,120,112,0,0,0,0,115,114,0,40,106,97,118,97,120,46,115,119,105,110,103,46,116,101,120,116,46,83,116,121,108,101,67,111,110,116,101,120,116,36,78,97,109,101,100,83,116,121,108,101,-9,-91,40,-110,-34,87,21,112,3,0,2,76,0,12,108,105,115,116,101,110,101,114,76,105,115,116,113,0,126,0,7,76,0,6,116,104,105,115,36,48,116,0,31,76,106,97,118,97,120,47,115,119,105,110,103,47,116,101,120,116,47,83,116,121,108,101,67,111,110,116,101,120,116,59,120,112,115,114,0,35,106,97,118,97,120,46,115,119,105,110,103,46,101,118,101,110,116,46,69,118,101,110,116,76,105,115,116,101,110,101,114,76,105,115,116,-79,54,-58,125,-124,-22,-42,68,3,0,0,120,112,112,120,113,0,126,0,11,119,4,0,0,0,1,116,0,7,100,101,102,97,117,108,116,115,113,0,126,0,12,115,113,0,126,0,15,112,120,113,0,126,0,11,119,4,0,0,0,1,116,0,36,106,97,118,97,120,46,115,119,105,110,103,46,116,101,120,116,46,83,116,121,108,101,67,111,110,115,116,97,110,116,115,46,110,97,109,101,113,0,126,0,17,120,120,120,115,114,0,27,106,97,118,97,120,46,115,119,105,110,103,46,116,101,120,116,46,71,97,112,67,111,110,116,101,110,116,116,56,-73,113,65,-93,64,69,2,0,0,120,114,0,26,106,97,118,97,120,46,115,119,105,110,103,46,116,101,120,116,46,71,97,112,86,101,99,116,111,114,47,-32,49,123,102,62,30,-37,2,0,3,73,0,2,103,48,73,0,2,103,49,76,0,5,97,114,114,97,121,116,0,18,76,106,97,118,97,47,108,97,110,103,47,79,98,106,101,99,116,59,120,112,0,0,0,0,0,0,0,25,117,114,0,2,91,67,-80,38,102,-80,-30,93,-124,-84,2,0,0,120,112,0,0,0,26,0,106,0,84,0,101,0,120,0,116,0,70,0,105,0,101,0,108,0,100,0,49,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,115,114,0,19,106,97,118,97,46,117,116,105,108,46,72,97,115,104,116,97,98,108,101,19,-69,15,37,33,74,-28,-72,3,0,2,70,0,10,108,111,97,100,70,97,99,116,111,114,73,0,9,116,104,114,101,115,104,111,108,100,120,112,63,64,0,0,0,0,0,3,119,8,0,0,0,3,0,0,0,2,116,0,4,105,49,56,110,115,114,0,17,106,97,118,97,46,108,97,110,103,46,66,111,111,108,101,97,110,-51,32,114,-128,-43,-100,-6,-18,2,0,1,90,0,5,118,97,108,117,101,120,112,0,116,0,7,116,97,98,83,105,122,101,115,114,0,17,106,97,118,97,46,108,97,110,103,46,73,110,116,101,103,101,114,18,-30,-96,-92,-9,-127,-121,56,2,0,1,73,0,5,118,97,108,117,101,120,114,0,16,106,97,118,97,46,108,97,110,103,46,78,117,109,98,101,114,-122,-84,-107,29,11,-108,-32,-117,2,0,0,120,112,0,0,0,8,120,115,113,0,126,0,15,112,120,115,114,0,16,106,97,118,97,46,117,116,105,108,46,86,101,99,116,111,114,-39,-105,125,91,-128,59,-81,1,2,0,3,73,0,17,99,97,112,97,99,105,116,121,73,110,99,114,101,109,101,110,116,73,0,12,101,108,101,109,101,110,116,67,111,117,110,116,91,0,11,101,108,101,109,101,110,116,68,97,116,97,116,0,19,91,76,106,97,118,97,47,108,97,110,103,47,79,98,106,101,99,116,59,120,112,0,0,0,0,0,0,0,0,117,114,0,19,91,76,106,97,118,97,46,108,97,110,103,46,79,98,106,101,99,116,59,-112,-50,88,-97,16,115,41,108,2,0,0,120,112,0,0,0,10,112,112,112,112,112,112,112,112,112,112,115,114,0,47,106,97,118,97,120,46,115,119,105,110,103,46,116,101,120,116,46,65,98,115,116,114,97,99,116,68,111,99,117,109,101,110,116,36,66,114,97,110,99,104,69,108,101,109,101,110,116,-120,-73,-52,-83,91,-5,0,-1,2,0,4,73,0,9,108,97,115,116,73,110,100,101,120,73,0,9,110,99,104,105,108,100,114,101,110,91,0,8,99,104,105,108,100,114,101,110,116,0,52,91,76,106,97,118,97,120,47,115,119,105,110,103,47,116,101,120,116,47,65,98,115,116,114,97,99,116,68,111,99,117,109,101,110,116,36,65,98,115,116,114,97,99,116,69,108,101,109,101,110,116,59,76,0,6,116,104,105,115,36,48,116,0,35,76,106,97,118,97,120,47,115,119,105,110,103,47,116,101,120,116,47,65,98,115,116,114,97,99,116,68,111,99,117,109,101,110,116,59,120,114,0,49,106,97,118,97,120,46,115,119,105,110,103,46,116,101,120,116,46,65,98,115,116,114,97,99,116,68,111,99,117,109,101,110,116,36,65,98,115,116,114,97,99,116,69,108,101,109,101,110,116,17,-113,75,58,12,-81,67,101,3,0,2,76,0,6,112,97,114,101,110,116,116,0,26,76,106,97,118,97,120,47,115,119,105,110,103,47,116,101,120,116,47,69,108,101,109,101,110,116,59,76,0,6,116,104,105,115,36,48,113,0,126,0,44,120,112,112,113,0,126,0,8,119,4,0,0,0,0,120,0,0,0,0,0,0,0,1,117,114,0,52,91,76,106,97,118,97,120,46,115,119,105,110,103,46,116,101,120,116,46,65,98,115,116,114,97,99,116,68,111,99,117,109,101,110,116,36,65,98,115,116,114,97,99,116,69,108,101,109,101,110,116,59,-22,19,116,57,119,58,-47,-99,2,0,0,120,112,0,0,0,2,115,114,0,45,106,97,118,97,120,46,115,119,105,110,103,46,116,101,120,116,46,65,98,115,116,114,97,99,116,68,111,99,117,109,101,110,116,36,76,101,97,102,69,108,101,109,101,110,116,70,-3,112,-68,-112,98,109,-38,3,0,1,76,0,6,116,104,105,115,36,48,113,0,126,0,44,120,113,0,126,0,45,113,0,126,0,47,113,0,126,0,8,119,4,0,0,0,0,120,113,0,126,0,8,119,8,0,0,0,0,0,0,0,1,120,112,113,0,126,0,8,115,113,0,126,0,37,0,0,0,0,0,0,0,0,117,113,0,126,0,40,0,0,0,10,112,112,112,112,112,112,112,112,112,112"/>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout" value="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+              <GridBagConstraints anchor="10" fill="0" gridHeight="1" gridWidth="1" gridX="-1" gridY="-1" insetsBottom="0" insetsLeft="4" insetsRight="4" insetsTop="0" ipadX="0" ipadY="0" weightX="0.0" weightY="0.0"/>
+            </Constraint>
+            <Constraint layoutClass="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignFlowLayout" value="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignFlowLayout$FlowConstraintsDescription"/>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButtonConfiguracion">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="com.netbeans.developer.editors.StringEditor" value="Configuración"/>
+          </Properties>
+
+          <Events>
+            <EventHandler event="actionPerformed" handler="jButtonConfiguracionActionPerformed"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout" value="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+              <GridBagConstraints anchor="10" fill="0" gridHeight="1" gridWidth="1" gridX="-1" gridY="-1" insetsBottom="4" insetsLeft="0" insetsRight="4" insetsTop="4" ipadX="0" ipadY="0" weightX="0.0" weightY="0.0"/>
+            </Constraint>
+            <Constraint layoutClass="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignFlowLayout" value="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignFlowLayout$FlowConstraintsDescription"/>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabelResultadoConfiguracion">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="com.netbeans.developer.explorer.propertysheet.editors.BorderEditor">
+              <Border info="com.netbeans.developerx.loaders.form.formeditor.border.EtchedBorderInfo">
+                <EtchetBorder/>
+              </Border>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout" value="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+              <GridBagConstraints anchor="10" fill="1" gridHeight="1" gridWidth="3" gridX="0" gridY="1" insetsBottom="4" insetsLeft="4" insetsRight="4" insetsTop="4" ipadX="0" ipadY="0" weightX="0.0" weightY="0.0"/>
+            </Constraint>
+            <Constraint layoutClass="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignFlowLayout" value="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignFlowLayout$FlowConstraintsDescription"/>
+          </Constraints>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="jPanelActualizar">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="com.netbeans.developer.explorer.propertysheet.editors.BorderEditor">
+          <Border info="com.netbeans.developerx.loaders.form.formeditor.border.TitledBorderInfo">
+            <TitledBorder title="Actualizar"/>
+          </Border>
+        </Property>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout" value="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+          <GridBagConstraints anchor="10" fill="2" gridHeight="1" gridWidth="1" gridX="1" gridY="2" insetsBottom="0" insetsLeft="0" insetsRight="0" insetsTop="0" ipadX="0" ipadY="0" weightX="0.0" weightY="0.0"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout class="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="jLabel9">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="com.netbeans.developer.editors.StringEditor" value="Nombre"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout" value="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+              <GridBagConstraints anchor="10" fill="0" gridHeight="1" gridWidth="1" gridX="-1" gridY="-1" insetsBottom="0" insetsLeft="0" insetsRight="0" insetsTop="0" ipadX="0" ipadY="0" weightX="0.0" weightY="0.0"/>
+            </Constraint>
+            <Constraint layoutClass="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignFlowLayout" value="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignFlowLayout$FlowConstraintsDescription"/>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jTextFieldNombreActualizar">
+          <Properties>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="com.netbeans.developer.editors.DimensionEditor">
+              <Dimension value="[150, 20]"/>
+            </Property>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="com.netbeans.developer.editors.DimensionEditor">
+              <Dimension value="[150, 20]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="com.netbeans.developer.editors.DimensionEditor">
+              <Dimension value="[150, 20]"/>
+            </Property>
+            <Property name="document" type="javax.swing.text.Document" editor="com.netbeans.enterprise.modules.jdbc.editors.TextDocumentEditor">
+              <SerializedValue value="-84,-19,0,5,115,114,0,30,106,97,118,97,120,46,115,119,105,110,103,46,116,101,120,116,46,80,108,97,105,110,68,111,99,117,109,101,110,116,-114,-100,99,38,-39,126,-73,29,2,0,3,76,0,5,97,100,100,101,100,116,0,18,76,106,97,118,97,47,117,116,105,108,47,86,101,99,116,111,114,59,76,0,11,100,101,102,97,117,108,116,82,111,111,116,116,0,51,76,106,97,118,97,120,47,115,119,105,110,103,47,116,101,120,116,47,65,98,115,116,114,97,99,116,68,111,99,117,109,101,110,116,36,65,98,115,116,114,97,99,116,69,108,101,109,101,110,116,59,76,0,7,114,101,109,111,118,101,100,113,0,126,0,1,120,114,0,33,106,97,118,97,120,46,115,119,105,110,103,46,116,101,120,116,46,65,98,115,116,114,97,99,116,68,111,99,117,109,101,110,116,110,19,99,106,-63,68,-15,27,2,0,4,76,0,7,99,111,110,116,101,120,116,116,0,52,76,106,97,118,97,120,47,115,119,105,110,103,47,116,101,120,116,47,65,98,115,116,114,97,99,116,68,111,99,117,109,101,110,116,36,65,116,116,114,105,98,117,116,101,67,111,110,116,101,120,116,59,76,0,4,100,97,116,97,116,0,43,76,106,97,118,97,120,47,115,119,105,110,103,47,116,101,120,116,47,65,98,115,116,114,97,99,116,68,111,99,117,109,101,110,116,36,67,111,110,116,101,110,116,59,76,0,18,100,111,99,117,109,101,110,116,80,114,111,112,101,114,116,105,101,115,116,0,22,76,106,97,118,97,47,117,116,105,108,47,68,105,99,116,105,111,110,97,114,121,59,76,0,12,108,105,115,116,101,110,101,114,76,105,115,116,116,0,37,76,106,97,118,97,120,47,115,119,105,110,103,47,101,118,101,110,116,47,69,118,101,110,116,76,105,115,116,101,110,101,114,76,105,115,116,59,120,112,115,114,0,29,106,97,118,97,120,46,115,119,105,110,103,46,116,101,120,116,46,83,116,121,108,101,67,111,110,116,101,120,116,68,68,50,-82,89,-8,-102,-24,3,0,2,73,0,10,117,110,117,115,101,100,83,101,116,115,76,0,6,115,116,121,108,101,115,116,0,24,76,106,97,118,97,120,47,115,119,105,110,103,47,116,101,120,116,47,83,116,121,108,101,59,120,112,0,0,0,0,115,114,0,40,106,97,118,97,120,46,115,119,105,110,103,46,116,101,120,116,46,83,116,121,108,101,67,111,110,116,101,120,116,36,78,97,109,101,100,83,116,121,108,101,-9,-91,40,-110,-34,87,21,112,3,0,2,76,0,12,108,105,115,116,101,110,101,114,76,105,115,116,113,0,126,0,7,76,0,6,116,104,105,115,36,48,116,0,31,76,106,97,118,97,120,47,115,119,105,110,103,47,116,101,120,116,47,83,116,121,108,101,67,111,110,116,101,120,116,59,120,112,115,114,0,35,106,97,118,97,120,46,115,119,105,110,103,46,101,118,101,110,116,46,69,118,101,110,116,76,105,115,116,101,110,101,114,76,105,115,116,-79,54,-58,125,-124,-22,-42,68,3,0,0,120,112,112,120,113,0,126,0,11,119,4,0,0,0,1,116,0,7,100,101,102,97,117,108,116,115,113,0,126,0,12,115,113,0,126,0,15,112,120,113,0,126,0,11,119,4,0,0,0,1,116,0,36,106,97,118,97,120,46,115,119,105,110,103,46,116,101,120,116,46,83,116,121,108,101,67,111,110,115,116,97,110,116,115,46,110,97,109,101,113,0,126,0,17,120,120,120,115,114,0,27,106,97,118,97,120,46,115,119,105,110,103,46,116,101,120,116,46,71,97,112,67,111,110,116,101,110,116,116,56,-73,113,65,-93,64,69,2,0,0,120,114,0,26,106,97,118,97,120,46,115,119,105,110,103,46,116,101,120,116,46,71,97,112,86,101,99,116,111,114,47,-32,49,123,102,62,30,-37,2,0,3,73,0,2,103,48,73,0,2,103,49,76,0,5,97,114,114,97,121,116,0,18,76,106,97,118,97,47,108,97,110,103,47,79,98,106,101,99,116,59,120,112,0,0,0,0,0,0,0,25,117,114,0,2,91,67,-80,38,102,-80,-30,93,-124,-84,2,0,0,120,112,0,0,0,26,0,106,0,84,0,101,0,120,0,116,0,70,0,105,0,101,0,108,0,100,0,50,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,115,114,0,19,106,97,118,97,46,117,116,105,108,46,72,97,115,104,116,97,98,108,101,19,-69,15,37,33,74,-28,-72,3,0,2,70,0,10,108,111,97,100,70,97,99,116,111,114,73,0,9,116,104,114,101,115,104,111,108,100,120,112,63,64,0,0,0,0,0,3,119,8,0,0,0,3,0,0,0,2,116,0,4,105,49,56,110,115,114,0,17,106,97,118,97,46,108,97,110,103,46,66,111,111,108,101,97,110,-51,32,114,-128,-43,-100,-6,-18,2,0,1,90,0,5,118,97,108,117,101,120,112,0,116,0,7,116,97,98,83,105,122,101,115,114,0,17,106,97,118,97,46,108,97,110,103,46,73,110,116,101,103,101,114,18,-30,-96,-92,-9,-127,-121,56,2,0,1,73,0,5,118,97,108,117,101,120,114,0,16,106,97,118,97,46,108,97,110,103,46,78,117,109,98,101,114,-122,-84,-107,29,11,-108,-32,-117,2,0,0,120,112,0,0,0,8,120,115,113,0,126,0,15,112,120,115,114,0,16,106,97,118,97,46,117,116,105,108,46,86,101,99,116,111,114,-39,-105,125,91,-128,59,-81,1,2,0,3,73,0,17,99,97,112,97,99,105,116,121,73,110,99,114,101,109,101,110,116,73,0,12,101,108,101,109,101,110,116,67,111,117,110,116,91,0,11,101,108,101,109,101,110,116,68,97,116,97,116,0,19,91,76,106,97,118,97,47,108,97,110,103,47,79,98,106,101,99,116,59,120,112,0,0,0,0,0,0,0,0,117,114,0,19,91,76,106,97,118,97,46,108,97,110,103,46,79,98,106,101,99,116,59,-112,-50,88,-97,16,115,41,108,2,0,0,120,112,0,0,0,10,112,112,112,112,112,112,112,112,112,112,115,114,0,47,106,97,118,97,120,46,115,119,105,110,103,46,116,101,120,116,46,65,98,115,116,114,97,99,116,68,111,99,117,109,101,110,116,36,66,114,97,110,99,104,69,108,101,109,101,110,116,-120,-73,-52,-83,91,-5,0,-1,2,0,4,73,0,9,108,97,115,116,73,110,100,101,120,73,0,9,110,99,104,105,108,100,114,101,110,91,0,8,99,104,105,108,100,114,101,110,116,0,52,91,76,106,97,118,97,120,47,115,119,105,110,103,47,116,101,120,116,47,65,98,115,116,114,97,99,116,68,111,99,117,109,101,110,116,36,65,98,115,116,114,97,99,116,69,108,101,109,101,110,116,59,76,0,6,116,104,105,115,36,48,116,0,35,76,106,97,118,97,120,47,115,119,105,110,103,47,116,101,120,116,47,65,98,115,116,114,97,99,116,68,111,99,117,109,101,110,116,59,120,114,0,49,106,97,118,97,120,46,115,119,105,110,103,46,116,101,120,116,46,65,98,115,116,114,97,99,116,68,111,99,117,109,101,110,116,36,65,98,115,116,114,97,99,116,69,108,101,109,101,110,116,17,-113,75,58,12,-81,67,101,3,0,2,76,0,6,112,97,114,101,110,116,116,0,26,76,106,97,118,97,120,47,115,119,105,110,103,47,116,101,120,116,47,69,108,101,109,101,110,116,59,76,0,6,116,104,105,115,36,48,113,0,126,0,44,120,112,112,113,0,126,0,8,119,4,0,0,0,0,120,0,0,0,0,0,0,0,1,117,114,0,52,91,76,106,97,118,97,120,46,115,119,105,110,103,46,116,101,120,116,46,65,98,115,116,114,97,99,116,68,111,99,117,109,101,110,116,36,65,98,115,116,114,97,99,116,69,108,101,109,101,110,116,59,-22,19,116,57,119,58,-47,-99,2,0,0,120,112,0,0,0,2,115,114,0,45,106,97,118,97,120,46,115,119,105,110,103,46,116,101,120,116,46,65,98,115,116,114,97,99,116,68,111,99,117,109,101,110,116,36,76,101,97,102,69,108,101,109,101,110,116,70,-3,112,-68,-112,98,109,-38,3,0,1,76,0,6,116,104,105,115,36,48,113,0,126,0,44,120,113,0,126,0,45,113,0,126,0,47,113,0,126,0,8,119,4,0,0,0,0,120,113,0,126,0,8,119,8,0,0,0,0,0,0,0,1,120,112,113,0,126,0,8,115,113,0,126,0,37,0,0,0,0,0,0,0,0,117,113,0,126,0,40,0,0,0,10,112,112,112,112,112,112,112,112,112,112"/>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout" value="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+              <GridBagConstraints anchor="10" fill="0" gridHeight="1" gridWidth="1" gridX="-1" gridY="-1" insetsBottom="2" insetsLeft="2" insetsRight="2" insetsTop="2" ipadX="0" ipadY="0" weightX="0.0" weightY="0.0"/>
+            </Constraint>
+            <Constraint layoutClass="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignFlowLayout" value="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignFlowLayout$FlowConstraintsDescription"/>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel10">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="com.netbeans.developer.editors.StringEditor" value="Clave"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout" value="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+              <GridBagConstraints anchor="10" fill="0" gridHeight="1" gridWidth="1" gridX="0" gridY="1" insetsBottom="0" insetsLeft="0" insetsRight="0" insetsTop="0" ipadX="0" ipadY="0" weightX="0.0" weightY="0.0"/>
+            </Constraint>
+            <Constraint layoutClass="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignFlowLayout" value="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignFlowLayout$FlowConstraintsDescription"/>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jTextFieldClaveActualizar">
+          <Properties>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="com.netbeans.developer.editors.DimensionEditor">
+              <Dimension value="[150, 20]"/>
+            </Property>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="com.netbeans.developer.editors.DimensionEditor">
+              <Dimension value="[150, 20]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="com.netbeans.developer.editors.DimensionEditor">
+              <Dimension value="[150, 20]"/>
+            </Property>
+            <Property name="document" type="javax.swing.text.Document" editor="com.netbeans.enterprise.modules.jdbc.editors.TextDocumentEditor">
+              <SerializedValue value="-84,-19,0,5,115,114,0,30,106,97,118,97,120,46,115,119,105,110,103,46,116,101,120,116,46,80,108,97,105,110,68,111,99,117,109,101,110,116,-114,-100,99,38,-39,126,-73,29,2,0,3,76,0,5,97,100,100,101,100,116,0,18,76,106,97,118,97,47,117,116,105,108,47,86,101,99,116,111,114,59,76,0,11,100,101,102,97,117,108,116,82,111,111,116,116,0,51,76,106,97,118,97,120,47,115,119,105,110,103,47,116,101,120,116,47,65,98,115,116,114,97,99,116,68,111,99,117,109,101,110,116,36,65,98,115,116,114,97,99,116,69,108,101,109,101,110,116,59,76,0,7,114,101,109,111,118,101,100,113,0,126,0,1,120,114,0,33,106,97,118,97,120,46,115,119,105,110,103,46,116,101,120,116,46,65,98,115,116,114,97,99,116,68,111,99,117,109,101,110,116,110,19,99,106,-63,68,-15,27,2,0,4,76,0,7,99,111,110,116,101,120,116,116,0,52,76,106,97,118,97,120,47,115,119,105,110,103,47,116,101,120,116,47,65,98,115,116,114,97,99,116,68,111,99,117,109,101,110,116,36,65,116,116,114,105,98,117,116,101,67,111,110,116,101,120,116,59,76,0,4,100,97,116,97,116,0,43,76,106,97,118,97,120,47,115,119,105,110,103,47,116,101,120,116,47,65,98,115,116,114,97,99,116,68,111,99,117,109,101,110,116,36,67,111,110,116,101,110,116,59,76,0,18,100,111,99,117,109,101,110,116,80,114,111,112,101,114,116,105,101,115,116,0,22,76,106,97,118,97,47,117,116,105,108,47,68,105,99,116,105,111,110,97,114,121,59,76,0,12,108,105,115,116,101,110,101,114,76,105,115,116,116,0,37,76,106,97,118,97,120,47,115,119,105,110,103,47,101,118,101,110,116,47,69,118,101,110,116,76,105,115,116,101,110,101,114,76,105,115,116,59,120,112,115,114,0,29,106,97,118,97,120,46,115,119,105,110,103,46,116,101,120,116,46,83,116,121,108,101,67,111,110,116,101,120,116,68,68,50,-82,89,-8,-102,-24,3,0,2,73,0,10,117,110,117,115,101,100,83,101,116,115,76,0,6,115,116,121,108,101,115,116,0,24,76,106,97,118,97,120,47,115,119,105,110,103,47,116,101,120,116,47,83,116,121,108,101,59,120,112,0,0,0,0,115,114,0,40,106,97,118,97,120,46,115,119,105,110,103,46,116,101,120,116,46,83,116,121,108,101,67,111,110,116,101,120,116,36,78,97,109,101,100,83,116,121,108,101,-9,-91,40,-110,-34,87,21,112,3,0,2,76,0,12,108,105,115,116,101,110,101,114,76,105,115,116,113,0,126,0,7,76,0,6,116,104,105,115,36,48,116,0,31,76,106,97,118,97,120,47,115,119,105,110,103,47,116,101,120,116,47,83,116,121,108,101,67,111,110,116,101,120,116,59,120,112,115,114,0,35,106,97,118,97,120,46,115,119,105,110,103,46,101,118,101,110,116,46,69,118,101,110,116,76,105,115,116,101,110,101,114,76,105,115,116,-79,54,-58,125,-124,-22,-42,68,3,0,0,120,112,112,120,113,0,126,0,11,119,4,0,0,0,1,116,0,7,100,101,102,97,117,108,116,115,113,0,126,0,12,115,113,0,126,0,15,112,120,113,0,126,0,11,119,4,0,0,0,1,116,0,36,106,97,118,97,120,46,115,119,105,110,103,46,116,101,120,116,46,83,116,121,108,101,67,111,110,115,116,97,110,116,115,46,110,97,109,101,113,0,126,0,17,120,120,120,115,114,0,27,106,97,118,97,120,46,115,119,105,110,103,46,116,101,120,116,46,71,97,112,67,111,110,116,101,110,116,116,56,-73,113,65,-93,64,69,2,0,0,120,114,0,26,106,97,118,97,120,46,115,119,105,110,103,46,116,101,120,116,46,71,97,112,86,101,99,116,111,114,47,-32,49,123,102,62,30,-37,2,0,3,73,0,2,103,48,73,0,2,103,49,76,0,5,97,114,114,97,121,116,0,18,76,106,97,118,97,47,108,97,110,103,47,79,98,106,101,99,116,59,120,112,0,0,0,0,0,0,0,25,117,114,0,2,91,67,-80,38,102,-80,-30,93,-124,-84,2,0,0,120,112,0,0,0,26,0,106,0,84,0,101,0,120,0,116,0,70,0,105,0,101,0,108,0,100,0,51,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,115,114,0,19,106,97,118,97,46,117,116,105,108,46,72,97,115,104,116,97,98,108,101,19,-69,15,37,33,74,-28,-72,3,0,2,70,0,10,108,111,97,100,70,97,99,116,111,114,73,0,9,116,104,114,101,115,104,111,108,100,120,112,63,64,0,0,0,0,0,3,119,8,0,0,0,3,0,0,0,2,116,0,4,105,49,56,110,115,114,0,17,106,97,118,97,46,108,97,110,103,46,66,111,111,108,101,97,110,-51,32,114,-128,-43,-100,-6,-18,2,0,1,90,0,5,118,97,108,117,101,120,112,0,116,0,7,116,97,98,83,105,122,101,115,114,0,17,106,97,118,97,46,108,97,110,103,46,73,110,116,101,103,101,114,18,-30,-96,-92,-9,-127,-121,56,2,0,1,73,0,5,118,97,108,117,101,120,114,0,16,106,97,118,97,46,108,97,110,103,46,78,117,109,98,101,114,-122,-84,-107,29,11,-108,-32,-117,2,0,0,120,112,0,0,0,8,120,115,113,0,126,0,15,112,120,115,114,0,16,106,97,118,97,46,117,116,105,108,46,86,101,99,116,111,114,-39,-105,125,91,-128,59,-81,1,2,0,3,73,0,17,99,97,112,97,99,105,116,121,73,110,99,114,101,109,101,110,116,73,0,12,101,108,101,109,101,110,116,67,111,117,110,116,91,0,11,101,108,101,109,101,110,116,68,97,116,97,116,0,19,91,76,106,97,118,97,47,108,97,110,103,47,79,98,106,101,99,116,59,120,112,0,0,0,0,0,0,0,0,117,114,0,19,91,76,106,97,118,97,46,108,97,110,103,46,79,98,106,101,99,116,59,-112,-50,88,-97,16,115,41,108,2,0,0,120,112,0,0,0,10,112,112,112,112,112,112,112,112,112,112,115,114,0,47,106,97,118,97,120,46,115,119,105,110,103,46,116,101,120,116,46,65,98,115,116,114,97,99,116,68,111,99,117,109,101,110,116,36,66,114,97,110,99,104,69,108,101,109,101,110,116,-120,-73,-52,-83,91,-5,0,-1,2,0,4,73,0,9,108,97,115,116,73,110,100,101,120,73,0,9,110,99,104,105,108,100,114,101,110,91,0,8,99,104,105,108,100,114,101,110,116,0,52,91,76,106,97,118,97,120,47,115,119,105,110,103,47,116,101,120,116,47,65,98,115,116,114,97,99,116,68,111,99,117,109,101,110,116,36,65,98,115,116,114,97,99,116,69,108,101,109,101,110,116,59,76,0,6,116,104,105,115,36,48,116,0,35,76,106,97,118,97,120,47,115,119,105,110,103,47,116,101,120,116,47,65,98,115,116,114,97,99,116,68,111,99,117,109,101,110,116,59,120,114,0,49,106,97,118,97,120,46,115,119,105,110,103,46,116,101,120,116,46,65,98,115,116,114,97,99,116,68,111,99,117,109,101,110,116,36,65,98,115,116,114,97,99,116,69,108,101,109,101,110,116,17,-113,75,58,12,-81,67,101,3,0,2,76,0,6,112,97,114,101,110,116,116,0,26,76,106,97,118,97,120,47,115,119,105,110,103,47,116,101,120,116,47,69,108,101,109,101,110,116,59,76,0,6,116,104,105,115,36,48,113,0,126,0,44,120,112,112,113,0,126,0,8,119,4,0,0,0,0,120,0,0,0,0,0,0,0,1,117,114,0,52,91,76,106,97,118,97,120,46,115,119,105,110,103,46,116,101,120,116,46,65,98,115,116,114,97,99,116,68,111,99,117,109,101,110,116,36,65,98,115,116,114,97,99,116,69,108,101,109,101,110,116,59,-22,19,116,57,119,58,-47,-99,2,0,0,120,112,0,0,0,2,115,114,0,45,106,97,118,97,120,46,115,119,105,110,103,46,116,101,120,116,46,65,98,115,116,114,97,99,116,68,111,99,117,109,101,110,116,36,76,101,97,102,69,108,101,109,101,110,116,70,-3,112,-68,-112,98,109,-38,3,0,1,76,0,6,116,104,105,115,36,48,113,0,126,0,44,120,113,0,126,0,45,113,0,126,0,47,113,0,126,0,8,119,4,0,0,0,0,120,113,0,126,0,8,119,8,0,0,0,0,0,0,0,1,120,112,113,0,126,0,8,115,113,0,126,0,37,0,0,0,0,0,0,0,0,117,113,0,126,0,40,0,0,0,10,112,112,112,112,112,112,112,112,112,112"/>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout" value="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+              <GridBagConstraints anchor="10" fill="0" gridHeight="1" gridWidth="1" gridX="1" gridY="1" insetsBottom="2" insetsLeft="2" insetsRight="2" insetsTop="2" ipadX="0" ipadY="0" weightX="0.0" weightY="0.0"/>
+            </Constraint>
+            <Constraint layoutClass="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignFlowLayout" value="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignFlowLayout$FlowConstraintsDescription"/>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel11">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="com.netbeans.developer.editors.StringEditor" value="Posición"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout" value="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+              <GridBagConstraints anchor="10" fill="0" gridHeight="1" gridWidth="1" gridX="0" gridY="2" insetsBottom="0" insetsLeft="0" insetsRight="0" insetsTop="0" ipadX="0" ipadY="0" weightX="0.0" weightY="0.0"/>
+            </Constraint>
+            <Constraint layoutClass="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignFlowLayout" value="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignFlowLayout$FlowConstraintsDescription"/>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jTextFieldPosicionActualizar">
+          <Properties>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="com.netbeans.developer.editors.DimensionEditor">
+              <Dimension value="[150, 20]"/>
+            </Property>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="com.netbeans.developer.editors.DimensionEditor">
+              <Dimension value="[150, 20]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="com.netbeans.developer.editors.DimensionEditor">
+              <Dimension value="[150, 20]"/>
+            </Property>
+            <Property name="document" type="javax.swing.text.Document" editor="com.netbeans.enterprise.modules.jdbc.editors.TextDocumentEditor">
+              <SerializedValue value="-84,-19,0,5,115,114,0,30,106,97,118,97,120,46,115,119,105,110,103,46,116,101,120,116,46,80,108,97,105,110,68,111,99,117,109,101,110,116,-114,-100,99,38,-39,126,-73,29,2,0,3,76,0,5,97,100,100,101,100,116,0,18,76,106,97,118,97,47,117,116,105,108,47,86,101,99,116,111,114,59,76,0,11,100,101,102,97,117,108,116,82,111,111,116,116,0,51,76,106,97,118,97,120,47,115,119,105,110,103,47,116,101,120,116,47,65,98,115,116,114,97,99,116,68,111,99,117,109,101,110,116,36,65,98,115,116,114,97,99,116,69,108,101,109,101,110,116,59,76,0,7,114,101,109,111,118,101,100,113,0,126,0,1,120,114,0,33,106,97,118,97,120,46,115,119,105,110,103,46,116,101,120,116,46,65,98,115,116,114,97,99,116,68,111,99,117,109,101,110,116,110,19,99,106,-63,68,-15,27,2,0,4,76,0,7,99,111,110,116,101,120,116,116,0,52,76,106,97,118,97,120,47,115,119,105,110,103,47,116,101,120,116,47,65,98,115,116,114,97,99,116,68,111,99,117,109,101,110,116,36,65,116,116,114,105,98,117,116,101,67,111,110,116,101,120,116,59,76,0,4,100,97,116,97,116,0,43,76,106,97,118,97,120,47,115,119,105,110,103,47,116,101,120,116,47,65,98,115,116,114,97,99,116,68,111,99,117,109,101,110,116,36,67,111,110,116,101,110,116,59,76,0,18,100,111,99,117,109,101,110,116,80,114,111,112,101,114,116,105,101,115,116,0,22,76,106,97,118,97,47,117,116,105,108,47,68,105,99,116,105,111,110,97,114,121,59,76,0,12,108,105,115,116,101,110,101,114,76,105,115,116,116,0,37,76,106,97,118,97,120,47,115,119,105,110,103,47,101,118,101,110,116,47,69,118,101,110,116,76,105,115,116,101,110,101,114,76,105,115,116,59,120,112,115,114,0,29,106,97,118,97,120,46,115,119,105,110,103,46,116,101,120,116,46,83,116,121,108,101,67,111,110,116,101,120,116,68,68,50,-82,89,-8,-102,-24,3,0,2,73,0,10,117,110,117,115,101,100,83,101,116,115,76,0,6,115,116,121,108,101,115,116,0,24,76,106,97,118,97,120,47,115,119,105,110,103,47,116,101,120,116,47,83,116,121,108,101,59,120,112,0,0,0,0,115,114,0,40,106,97,118,97,120,46,115,119,105,110,103,46,116,101,120,116,46,83,116,121,108,101,67,111,110,116,101,120,116,36,78,97,109,101,100,83,116,121,108,101,-9,-91,40,-110,-34,87,21,112,3,0,2,76,0,12,108,105,115,116,101,110,101,114,76,105,115,116,113,0,126,0,7,76,0,6,116,104,105,115,36,48,116,0,31,76,106,97,118,97,120,47,115,119,105,110,103,47,116,101,120,116,47,83,116,121,108,101,67,111,110,116,101,120,116,59,120,112,115,114,0,35,106,97,118,97,120,46,115,119,105,110,103,46,101,118,101,110,116,46,69,118,101,110,116,76,105,115,116,101,110,101,114,76,105,115,116,-79,54,-58,125,-124,-22,-42,68,3,0,0,120,112,112,120,113,0,126,0,11,119,4,0,0,0,1,116,0,7,100,101,102,97,117,108,116,115,113,0,126,0,12,115,113,0,126,0,15,112,120,113,0,126,0,11,119,4,0,0,0,1,116,0,36,106,97,118,97,120,46,115,119,105,110,103,46,116,101,120,116,46,83,116,121,108,101,67,111,110,115,116,97,110,116,115,46,110,97,109,101,113,0,126,0,17,120,120,120,115,114,0,27,106,97,118,97,120,46,115,119,105,110,103,46,116,101,120,116,46,71,97,112,67,111,110,116,101,110,116,116,56,-73,113,65,-93,64,69,2,0,0,120,114,0,26,106,97,118,97,120,46,115,119,105,110,103,46,116,101,120,116,46,71,97,112,86,101,99,116,111,114,47,-32,49,123,102,62,30,-37,2,0,3,73,0,2,103,48,73,0,2,103,49,76,0,5,97,114,114,97,121,116,0,18,76,106,97,118,97,47,108,97,110,103,47,79,98,106,101,99,116,59,120,112,0,0,0,0,0,0,0,25,117,114,0,2,91,67,-80,38,102,-80,-30,93,-124,-84,2,0,0,120,112,0,0,0,26,0,106,0,84,0,101,0,120,0,116,0,70,0,105,0,101,0,108,0,100,0,52,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,115,114,0,19,106,97,118,97,46,117,116,105,108,46,72,97,115,104,116,97,98,108,101,19,-69,15,37,33,74,-28,-72,3,0,2,70,0,10,108,111,97,100,70,97,99,116,111,114,73,0,9,116,104,114,101,115,104,111,108,100,120,112,63,64,0,0,0,0,0,3,119,8,0,0,0,3,0,0,0,2,116,0,4,105,49,56,110,115,114,0,17,106,97,118,97,46,108,97,110,103,46,66,111,111,108,101,97,110,-51,32,114,-128,-43,-100,-6,-18,2,0,1,90,0,5,118,97,108,117,101,120,112,0,116,0,7,116,97,98,83,105,122,101,115,114,0,17,106,97,118,97,46,108,97,110,103,46,73,110,116,101,103,101,114,18,-30,-96,-92,-9,-127,-121,56,2,0,1,73,0,5,118,97,108,117,101,120,114,0,16,106,97,118,97,46,108,97,110,103,46,78,117,109,98,101,114,-122,-84,-107,29,11,-108,-32,-117,2,0,0,120,112,0,0,0,8,120,115,113,0,126,0,15,112,120,115,114,0,16,106,97,118,97,46,117,116,105,108,46,86,101,99,116,111,114,-39,-105,125,91,-128,59,-81,1,2,0,3,73,0,17,99,97,112,97,99,105,116,121,73,110,99,114,101,109,101,110,116,73,0,12,101,108,101,109,101,110,116,67,111,117,110,116,91,0,11,101,108,101,109,101,110,116,68,97,116,97,116,0,19,91,76,106,97,118,97,47,108,97,110,103,47,79,98,106,101,99,116,59,120,112,0,0,0,0,0,0,0,0,117,114,0,19,91,76,106,97,118,97,46,108,97,110,103,46,79,98,106,101,99,116,59,-112,-50,88,-97,16,115,41,108,2,0,0,120,112,0,0,0,10,112,112,112,112,112,112,112,112,112,112,115,114,0,47,106,97,118,97,120,46,115,119,105,110,103,46,116,101,120,116,46,65,98,115,116,114,97,99,116,68,111,99,117,109,101,110,116,36,66,114,97,110,99,104,69,108,101,109,101,110,116,-120,-73,-52,-83,91,-5,0,-1,2,0,4,73,0,9,108,97,115,116,73,110,100,101,120,73,0,9,110,99,104,105,108,100,114,101,110,91,0,8,99,104,105,108,100,114,101,110,116,0,52,91,76,106,97,118,97,120,47,115,119,105,110,103,47,116,101,120,116,47,65,98,115,116,114,97,99,116,68,111,99,117,109,101,110,116,36,65,98,115,116,114,97,99,116,69,108,101,109,101,110,116,59,76,0,6,116,104,105,115,36,48,116,0,35,76,106,97,118,97,120,47,115,119,105,110,103,47,116,101,120,116,47,65,98,115,116,114,97,99,116,68,111,99,117,109,101,110,116,59,120,114,0,49,106,97,118,97,120,46,115,119,105,110,103,46,116,101,120,116,46,65,98,115,116,114,97,99,116,68,111,99,117,109,101,110,116,36,65,98,115,116,114,97,99,116,69,108,101,109,101,110,116,17,-113,75,58,12,-81,67,101,3,0,2,76,0,6,112,97,114,101,110,116,116,0,26,76,106,97,118,97,120,47,115,119,105,110,103,47,116,101,120,116,47,69,108,101,109,101,110,116,59,76,0,6,116,104,105,115,36,48,113,0,126,0,44,120,112,112,113,0,126,0,8,119,4,0,0,0,0,120,0,0,0,0,0,0,0,1,117,114,0,52,91,76,106,97,118,97,120,46,115,119,105,110,103,46,116,101,120,116,46,65,98,115,116,114,97,99,116,68,111,99,117,109,101,110,116,36,65,98,115,116,114,97,99,116,69,108,101,109,101,110,116,59,-22,19,116,57,119,58,-47,-99,2,0,0,120,112,0,0,0,2,115,114,0,45,106,97,118,97,120,46,115,119,105,110,103,46,116,101,120,116,46,65,98,115,116,114,97,99,116,68,111,99,117,109,101,110,116,36,76,101,97,102,69,108,101,109,101,110,116,70,-3,112,-68,-112,98,109,-38,3,0,1,76,0,6,116,104,105,115,36,48,113,0,126,0,44,120,113,0,126,0,45,113,0,126,0,47,113,0,126,0,8,119,4,0,0,0,0,120,113,0,126,0,8,119,8,0,0,0,0,0,0,0,1,120,112,113,0,126,0,8,115,113,0,126,0,37,0,0,0,0,0,0,0,0,117,113,0,126,0,40,0,0,0,10,112,112,112,112,112,112,112,112,112,112"/>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout" value="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+              <GridBagConstraints anchor="10" fill="0" gridHeight="1" gridWidth="1" gridX="1" gridY="2" insetsBottom="2" insetsLeft="2" insetsRight="2" insetsTop="2" ipadX="0" ipadY="0" weightX="0.0" weightY="0.0"/>
+            </Constraint>
+            <Constraint layoutClass="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignFlowLayout" value="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignFlowLayout$FlowConstraintsDescription"/>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel12">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="com.netbeans.developer.editors.StringEditor" value="Valor"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout" value="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+              <GridBagConstraints anchor="10" fill="0" gridHeight="1" gridWidth="1" gridX="0" gridY="3" insetsBottom="0" insetsLeft="0" insetsRight="0" insetsTop="0" ipadX="0" ipadY="0" weightX="0.0" weightY="0.0"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jTextFieldValorActualizar">
+          <Properties>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="com.netbeans.developer.editors.DimensionEditor">
+              <Dimension value="[150, 20]"/>
+            </Property>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="com.netbeans.developer.editors.DimensionEditor">
+              <Dimension value="[150, 20]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="com.netbeans.developer.editors.DimensionEditor">
+              <Dimension value="[150, 20]"/>
+            </Property>
+            <Property name="document" type="javax.swing.text.Document" editor="com.netbeans.enterprise.modules.jdbc.editors.TextDocumentEditor">
+              <SerializedValue value="-84,-19,0,5,115,114,0,30,106,97,118,97,120,46,115,119,105,110,103,46,116,101,120,116,46,80,108,97,105,110,68,111,99,117,109,101,110,116,-114,-100,99,38,-39,126,-73,29,2,0,3,76,0,5,97,100,100,101,100,116,0,18,76,106,97,118,97,47,117,116,105,108,47,86,101,99,116,111,114,59,76,0,11,100,101,102,97,117,108,116,82,111,111,116,116,0,51,76,106,97,118,97,120,47,115,119,105,110,103,47,116,101,120,116,47,65,98,115,116,114,97,99,116,68,111,99,117,109,101,110,116,36,65,98,115,116,114,97,99,116,69,108,101,109,101,110,116,59,76,0,7,114,101,109,111,118,101,100,113,0,126,0,1,120,114,0,33,106,97,118,97,120,46,115,119,105,110,103,46,116,101,120,116,46,65,98,115,116,114,97,99,116,68,111,99,117,109,101,110,116,110,19,99,106,-63,68,-15,27,2,0,4,76,0,7,99,111,110,116,101,120,116,116,0,52,76,106,97,118,97,120,47,115,119,105,110,103,47,116,101,120,116,47,65,98,115,116,114,97,99,116,68,111,99,117,109,101,110,116,36,65,116,116,114,105,98,117,116,101,67,111,110,116,101,120,116,59,76,0,4,100,97,116,97,116,0,43,76,106,97,118,97,120,47,115,119,105,110,103,47,116,101,120,116,47,65,98,115,116,114,97,99,116,68,111,99,117,109,101,110,116,36,67,111,110,116,101,110,116,59,76,0,18,100,111,99,117,109,101,110,116,80,114,111,112,101,114,116,105,101,115,116,0,22,76,106,97,118,97,47,117,116,105,108,47,68,105,99,116,105,111,110,97,114,121,59,76,0,12,108,105,115,116,101,110,101,114,76,105,115,116,116,0,37,76,106,97,118,97,120,47,115,119,105,110,103,47,101,118,101,110,116,47,69,118,101,110,116,76,105,115,116,101,110,101,114,76,105,115,116,59,120,112,115,114,0,29,106,97,118,97,120,46,115,119,105,110,103,46,116,101,120,116,46,83,116,121,108,101,67,111,110,116,101,120,116,68,68,50,-82,89,-8,-102,-24,3,0,2,73,0,10,117,110,117,115,101,100,83,101,116,115,76,0,6,115,116,121,108,101,115,116,0,24,76,106,97,118,97,120,47,115,119,105,110,103,47,116,101,120,116,47,83,116,121,108,101,59,120,112,0,0,0,0,115,114,0,40,106,97,118,97,120,46,115,119,105,110,103,46,116,101,120,116,46,83,116,121,108,101,67,111,110,116,101,120,116,36,78,97,109,101,100,83,116,121,108,101,-9,-91,40,-110,-34,87,21,112,3,0,2,76,0,12,108,105,115,116,101,110,101,114,76,105,115,116,113,0,126,0,7,76,0,6,116,104,105,115,36,48,116,0,31,76,106,97,118,97,120,47,115,119,105,110,103,47,116,101,120,116,47,83,116,121,108,101,67,111,110,116,101,120,116,59,120,112,115,114,0,35,106,97,118,97,120,46,115,119,105,110,103,46,101,118,101,110,116,46,69,118,101,110,116,76,105,115,116,101,110,101,114,76,105,115,116,-79,54,-58,125,-124,-22,-42,68,3,0,0,120,112,112,120,113,0,126,0,11,119,4,0,0,0,1,116,0,7,100,101,102,97,117,108,116,115,113,0,126,0,12,115,113,0,126,0,15,112,120,113,0,126,0,11,119,4,0,0,0,1,116,0,36,106,97,118,97,120,46,115,119,105,110,103,46,116,101,120,116,46,83,116,121,108,101,67,111,110,115,116,97,110,116,115,46,110,97,109,101,113,0,126,0,17,120,120,120,115,114,0,27,106,97,118,97,120,46,115,119,105,110,103,46,116,101,120,116,46,71,97,112,67,111,110,116,101,110,116,116,56,-73,113,65,-93,64,69,2,0,0,120,114,0,26,106,97,118,97,120,46,115,119,105,110,103,46,116,101,120,116,46,71,97,112,86,101,99,116,111,114,47,-32,49,123,102,62,30,-37,2,0,3,73,0,2,103,48,73,0,2,103,49,76,0,5,97,114,114,97,121,116,0,18,76,106,97,118,97,47,108,97,110,103,47,79,98,106,101,99,116,59,120,112,0,0,0,0,0,0,0,25,117,114,0,2,91,67,-80,38,102,-80,-30,93,-124,-84,2,0,0,120,112,0,0,0,26,0,106,0,84,0,101,0,120,0,116,0,70,0,105,0,101,0,108,0,100,0,53,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,115,114,0,19,106,97,118,97,46,117,116,105,108,46,72,97,115,104,116,97,98,108,101,19,-69,15,37,33,74,-28,-72,3,0,2,70,0,10,108,111,97,100,70,97,99,116,111,114,73,0,9,116,104,114,101,115,104,111,108,100,120,112,63,64,0,0,0,0,0,3,119,8,0,0,0,3,0,0,0,2,116,0,4,105,49,56,110,115,114,0,17,106,97,118,97,46,108,97,110,103,46,66,111,111,108,101,97,110,-51,32,114,-128,-43,-100,-6,-18,2,0,1,90,0,5,118,97,108,117,101,120,112,0,116,0,7,116,97,98,83,105,122,101,115,114,0,17,106,97,118,97,46,108,97,110,103,46,73,110,116,101,103,101,114,18,-30,-96,-92,-9,-127,-121,56,2,0,1,73,0,5,118,97,108,117,101,120,114,0,16,106,97,118,97,46,108,97,110,103,46,78,117,109,98,101,114,-122,-84,-107,29,11,-108,-32,-117,2,0,0,120,112,0,0,0,8,120,115,113,0,126,0,15,112,120,115,114,0,16,106,97,118,97,46,117,116,105,108,46,86,101,99,116,111,114,-39,-105,125,91,-128,59,-81,1,2,0,3,73,0,17,99,97,112,97,99,105,116,121,73,110,99,114,101,109,101,110,116,73,0,12,101,108,101,109,101,110,116,67,111,117,110,116,91,0,11,101,108,101,109,101,110,116,68,97,116,97,116,0,19,91,76,106,97,118,97,47,108,97,110,103,47,79,98,106,101,99,116,59,120,112,0,0,0,0,0,0,0,0,117,114,0,19,91,76,106,97,118,97,46,108,97,110,103,46,79,98,106,101,99,116,59,-112,-50,88,-97,16,115,41,108,2,0,0,120,112,0,0,0,10,112,112,112,112,112,112,112,112,112,112,115,114,0,47,106,97,118,97,120,46,115,119,105,110,103,46,116,101,120,116,46,65,98,115,116,114,97,99,116,68,111,99,117,109,101,110,116,36,66,114,97,110,99,104,69,108,101,109,101,110,116,-120,-73,-52,-83,91,-5,0,-1,2,0,4,73,0,9,108,97,115,116,73,110,100,101,120,73,0,9,110,99,104,105,108,100,114,101,110,91,0,8,99,104,105,108,100,114,101,110,116,0,52,91,76,106,97,118,97,120,47,115,119,105,110,103,47,116,101,120,116,47,65,98,115,116,114,97,99,116,68,111,99,117,109,101,110,116,36,65,98,115,116,114,97,99,116,69,108,101,109,101,110,116,59,76,0,6,116,104,105,115,36,48,116,0,35,76,106,97,118,97,120,47,115,119,105,110,103,47,116,101,120,116,47,65,98,115,116,114,97,99,116,68,111,99,117,109,101,110,116,59,120,114,0,49,106,97,118,97,120,46,115,119,105,110,103,46,116,101,120,116,46,65,98,115,116,114,97,99,116,68,111,99,117,109,101,110,116,36,65,98,115,116,114,97,99,116,69,108,101,109,101,110,116,17,-113,75,58,12,-81,67,101,3,0,2,76,0,6,112,97,114,101,110,116,116,0,26,76,106,97,118,97,120,47,115,119,105,110,103,47,116,101,120,116,47,69,108,101,109,101,110,116,59,76,0,6,116,104,105,115,36,48,113,0,126,0,44,120,112,112,113,0,126,0,8,119,4,0,0,0,0,120,0,0,0,0,0,0,0,1,117,114,0,52,91,76,106,97,118,97,120,46,115,119,105,110,103,46,116,101,120,116,46,65,98,115,116,114,97,99,116,68,111,99,117,109,101,110,116,36,65,98,115,116,114,97,99,116,69,108,101,109,101,110,116,59,-22,19,116,57,119,58,-47,-99,2,0,0,120,112,0,0,0,2,115,114,0,45,106,97,118,97,120,46,115,119,105,110,103,46,116,101,120,116,46,65,98,115,116,114,97,99,116,68,111,99,117,109,101,110,116,36,76,101,97,102,69,108,101,109,101,110,116,70,-3,112,-68,-112,98,109,-38,3,0,1,76,0,6,116,104,105,115,36,48,113,0,126,0,44,120,113,0,126,0,45,113,0,126,0,47,113,0,126,0,8,119,4,0,0,0,0,120,113,0,126,0,8,119,8,0,0,0,0,0,0,0,1,120,112,113,0,126,0,8,115,113,0,126,0,37,0,0,0,0,0,0,0,0,117,113,0,126,0,40,0,0,0,10,112,112,112,112,112,112,112,112,112,112"/>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout" value="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+              <GridBagConstraints anchor="10" fill="0" gridHeight="1" gridWidth="1" gridX="1" gridY="3" insetsBottom="2" insetsLeft="2" insetsRight="2" insetsTop="2" ipadX="0" ipadY="0" weightX="0.0" weightY="0.0"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButtonActualizar">
+          <Properties>
+            <Property name="text" type="java.lang.String" editor="com.netbeans.developer.editors.StringEditor" value="Actualizar"/>
+          </Properties>
+
+          <Events>
+            <EventHandler event="actionPerformed" handler="jButtonActualizarActionPerformed"/>
+          </Events>
+          <Constraints>
+            <Constraint layoutClass="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout" value="com.netbeans.developerx.loaders.form.formeditor.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+              <GridBagConstraints anchor="10" fill="2" gridHeight="1" gridWidth="2" gridX="0" gridY="4" insetsBottom="3" insetsLeft="3" insetsRight="3" insetsTop="3" ipadX="0" ipadY="0" weightX="0.0" weightY="0.0"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
