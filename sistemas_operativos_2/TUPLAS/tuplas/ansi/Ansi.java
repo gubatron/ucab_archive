@@ -13,7 +13,7 @@ package tuplas.ansi;
     Esta linea en el config.sys carga el standard ansi
     al arrancar el sistema
 
-    Creada por Angel 'Kangaroo Gubatron' Le¢n
+    Creada por Angel 'Kangaroo Gubatron' LeÂ¢n
 */
 public class Ansi
 {
@@ -48,8 +48,8 @@ public class Ansi
         public static final int REVERSE = 7;
         public static final int INVISIBLE = 8;
 
-        /** M‚todo gotoXY(int x,int y)<br>
-        Coloca el cursor en la posici¢n (x,y) dada.
+        /** Mâ€štodo gotoXY(int x,int y)<br>
+        Coloca el cursor en la posiciÂ¢n (x,y) dada.
         Se toma como origen de la pantalla la esquina superior izquierda.
         */
         public static void gotoXY(int x, int y)
@@ -57,7 +57,7 @@ public class Ansi
                 System.out.print(ESC + "[" + y + ";" + x + "f");
         }
 
-        /** M‚todo cls()<br>
+        /** Mâ€štodo cls()<br>
         Sirve para limpiar la pantalla.
         */
         public static void cls()
@@ -65,15 +65,15 @@ public class Ansi
                 System.out.print(ESC + "[2J");
         }
 
-        /** M‚todo eraseLine()
-        Elimina desde la posici¢n actual del cursor hasta el fin de la linea.
+        /** Mâ€štodo eraseLine()
+        Elimina desde la posiciÂ¢n actual del cursor hasta el fin de la linea.
         */
         public static void eraseLine()
         {
                 System.out.print(ESC + "[K");
         }
 
-        /** M‚todo setDisplayMode(int mode)
+        /** Mâ€štodo setDisplayMode(int mode)
         Sirve para cambiar la resolucion y colores de la pantalla.
         Utilize las constantes definidas en esta clase.
         */
@@ -82,7 +82,7 @@ public class Ansi
                 System.out.print(ESC + "[=" + mode + "h");
         }
 
-        /** M‚todo wrapLine(boolean) <br>
+        /** Mâ€štodo wrapLine(boolean) <br>
         Cuando las lineas son mas largas que el ancho de pantalla, las mismas<br>
         pueden ser truncadas, o envueltas a la linea inferior.<br>
         <b>true</b> - Envuelve la linea.
@@ -96,7 +96,7 @@ public class Ansi
                 System.out.print(ESC + "[=7l");
         }
 
-        /** M‚todo setForeground(int color)<br>
+        /** Mâ€štodo setForeground(int color)<br>
         Coloca el color de las letras. Utilice las constantes de color definidas en
         la clase Ansi. Tambien pone atributos como Alta intensidad, SUbrayar, Blink,Invisible...
         */
@@ -105,7 +105,7 @@ public class Ansi
                 System.out.print(ESC + "[" + color + "m");
         }
 
-        /** M‚todo setBackground(int color)<br>
+        /** Mâ€štodo setBackground(int color)<br>
         Coloca el color del fondo, en realidad,a la constante de color
         que entra como parametro se le suma 10 internamente, ya que no
         son las mismas para fondo y letras. En resumen utilize las mismas
@@ -114,8 +114,7 @@ public class Ansi
         */
         public static void setBackground(int color)
         {
-                color += 10;
-                System.out.print(ESC + "[" + color + "m");
+                setForeground(color + 10);
         }
 
         public static void main(String args[])
